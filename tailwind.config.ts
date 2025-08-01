@@ -61,14 +61,6 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				},
-				// CFS Brand colors
-				cfs: {
-					teal: 'hsl(var(--cfs-teal))',
-					red: 'hsl(var(--cfs-red))',
-					blue: 'hsl(var(--cfs-blue))',
-					'light-bg': 'hsl(var(--cfs-light-bg))',
-					'dark-text': 'hsl(var(--cfs-dark-text))'
 				}
 			},
 			borderRadius: {

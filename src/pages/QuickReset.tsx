@@ -61,22 +61,22 @@ const QuickReset = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-cfs-light-bg">
       <Header />
       
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-10">
         {alert && (
-          <Alert className={`mb-6 ${alert.type === "error" ? "border-destructive" : "border-green-500"}`}>
-            <AlertDescription className={alert.type === "error" ? "text-destructive" : "text-green-700"}>
+          <Alert className={`mb-8 max-w-2xl mx-auto cfs-card-shadow border-0 ${alert.type === "error" ? "bg-destructive/10 text-destructive" : "bg-green-50 text-green-800 border-green-200"}`}>
+            <AlertDescription className="text-base font-medium">
               {alert.message}
             </AlertDescription>
           </Alert>
         )}
 
-        <div className="max-w-md mx-auto bg-card rounded-lg shadow-md p-6">
-          <h2 className="text-2xl font-bold text-center mb-6">Quick Reset</h2>
+        <div className="max-w-lg mx-auto bg-card rounded-2xl cfs-card-shadow p-8 border-0">
+          <h2 className="text-3xl font-bold text-center mb-8 text-cfs-dark-text">Quick Reset</h2>
           
-          <div className="space-y-4">
+          <div className="space-y-6">
             <div>
               <Label htmlFor="baseCustomerId">Base Customer ID</Label>
               <Input
